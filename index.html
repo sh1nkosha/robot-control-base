@@ -1,0 +1,51 @@
+<!-- shahad hassan almoudi
+     Umm-Al-Qura university  
+	 -->
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Robot base Controller</title> <!-- page title-->
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css" >   <!--connect html whith css-->
+
+	</head>
+	<body>
+	
+        <!-- mobe button -->
+		<form  method="post" action="Base.php" >
+
+		<div style="margin-left: 125px; "> 
+			<button type="submit" value="F" name="forward">
+				<p> <i class="arrow up"></i></p></button>   </div>
+
+		<div style="display: inline-block;"> 
+			<button type="submit" value="L" name="leftt"> 
+				<p> <i class="arrow left"></i></p></button>   </div>
+
+		<div style="display: inline-block; margin-right: 10px;" >
+			<button type="submit" value="0" class="stop"name="stop" > stop
+				<p> <i class="s"></i></p></button>   </div> 
+
+		<div style="display: inline-block;"> 
+			<button type="submit" value="R" name="rightt"> 
+				<p> <i class="arrow right"></i></p></button>   </div>
+		
+		<div style="margin-left: 125px;" > 
+			<button type="submit" value="B" name="backward"> 
+				<p> <i class="arrow down"></i></p></button>   </div>
+		</form>
+
+<!-- j s -->	
+<script>
+var slider = document.getElementById("sl");
+var output = document.getElementById("demo");
+// Display default value for slider.
+output.innerHTML = slider.value; 
+// Update slider value
+slider.oninput = function() { 
+output.innerHTML = this.value;}
+</script>
+
+</body>
+</html>
